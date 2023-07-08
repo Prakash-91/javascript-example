@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <Script>
+           var javascriptMark = parseInt(prompt("Enter Javascript mark"));
+           var javaMark = parseInt(prompt("Enter Java mark"));
+           var dotnetMark = parseInt(prompt("Enter dotnet mark"));
+
+           var total = javascriptMark + javaMark + dotnetMark;
+           var avg = total/3;
+
+           document.write("Total mark is : "+total+"<br/>");
+           document.write("Average mark is : "+avg+"<br/>");
+
+           if(javascriptMark >=35 && javaMark >=35 && dotnetMark >=35){
+                document.write("Passed<br/>");
+                if(avg >= 35 && avg < 50){
+                    document.write("Grade : C <br/>");
+                }
+                else if(avg >= 50 && avg < 60){
+                    document.write("Grade : B <br/>");
+                }
+                else if(avg >= 60 && avg < 90){
+                    document.write("Grade : A <br/>");
+                }
+                else if(avg >= 90 && avg <= 100){
+                    document.write("Grade : Distinguish <br/>");
+                }
+           }
+           else{
+            document.write("Failed<br/>");
+           }
+
+        </Script>
+    </head>
+   
+    </body>
+</html>
