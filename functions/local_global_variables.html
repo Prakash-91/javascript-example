@@ -1,0 +1,36 @@
+<html>
+    <head>
+            <title> Local and Global variables </title>
+        <Script>
+
+            var b = 20;
+            function fun1(){
+                var a = 10;
+                function fun2(){
+                    document.write("The value of A is :"+a+"<br/>");
+                    document.write("The value of B is :"+b+"<br/>");
+                 }
+                 
+                 function fun3(){
+                    document.write("The value of A is :"+a+"<br/>");
+                    document.write("The value of B is :"+b+"<br/>");
+                 }
+                 fun2();
+                 fun3();
+            }
+
+            function fun4(){
+                document.write(" Inside fun4 Method <br/>");
+                //document.write("The value of A is :"+a+"<br/>"); // This is not accessable as 'a' is local to fun1
+                document.write("The value of B is :"+b+"<br/>");
+
+            }
+           
+           fun1();
+           fun4();
+            
+        </Script>
+    </head>
+   
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+            <title> Grade Calculation </title>
+        <Script>
+
+            function calculateGrade(){
+                var math = parseInt(prompt("Enter the Math Marks"));
+                var phy = parseInt(prompt("Enter the Physics Marks"));
+                var che = parseInt(prompt("Enter the Chemistry Marks"));
+                
+                var avg = (math+phy+che)/3;
+                document.write("Average is : "+avg+"<br/>");
+
+                if(avg >= 90){
+                    document.write("A Grade");
+                }
+                else if(avg > 70 && avg < 90){
+                    document.write("B Grade");
+                }else{
+                    document.write("C Grade");
+                }
+            }
+
+            calculateGrade();
+        </Script>
+    </head>
+   
+    </body>
+</html>
