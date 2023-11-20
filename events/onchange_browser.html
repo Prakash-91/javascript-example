@@ -1,0 +1,20 @@
+<html>
+    <head>
+            <title>onchange Event with browse the url</title>
+        <Script>
+
+            function handleOnChangeEvent(x){
+                window.location=x;
+            }
+            
+        </Script>
+    </head>
+   <body>
+    <select onchange="handleOnChangeEvent(this.value)">
+        <option value="">Select a Website</option>
+        <option value="http://google.com">Google</option>
+        <option value="http://facebook.com">Facebook</option>
+        <option value="http://gmail.com">Gmail</option>
+    </select>
+   </body>
+</html>

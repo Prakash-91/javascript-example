@@ -1,0 +1,21 @@
+<html>
+    <head>
+            <title>DOM: events and eventListeners</title>
+        <Script>
+            function handleEvent(){
+                
+                document.getElementById("button1").addEventListener("click",handleButtonEvent);
+
+                function handleButtonEvent(){
+                    alert("Clicked Me");
+                }
+            }
+
+            window.addEventListener("load",handleEvent);
+         
+        </Script>
+    </head>
+   <body>
+        <input type="button" value="click me" id="button1"/>
+   </body>
+</html>

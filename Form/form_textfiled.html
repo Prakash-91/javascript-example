@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <title>Form TextFiedvalidation</title>
+        <Script>
+        
+        function validate(){
+
+            // There are 2 ways w ecan retrive form text data as given below
+
+            //var email = document.getElementById("mail").value;
+            var email = document.form1.email.value;
+            var pass = document.form1.pwd.value;
+
+            if(email==""){
+                alert("Email is Mandatory");
+                document.form1.email.focus();
+                return false;
+            }else if(pass==""){
+                alert("Password is Mandatory");
+                document.form1.pwd.focus();
+                return false;
+            }else{
+                alert("Successful");
+                return true;
+            }
+        }
+            
+        </Script>
+    </head>
+   <body>
+    <H3> User Login </H3>
+    <form name="form1" action="loginSuccess.jsp" onsubmit="return validate()">
+        Email : <input type="text" name="email" id="mail"/> <br/>
+        Password : <input type="password" name="pwd" id="pass"/> <br/>
+        <input type="submit" value="login"/>
+    </form>
+    
+   </body>
+</html>

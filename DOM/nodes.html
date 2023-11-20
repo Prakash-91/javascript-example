@@ -1,0 +1,31 @@
+<html>
+    <head>
+            <title>DOM: Node removal and creation</title>
+        <Script>
+            function handleRemove(){
+                var parent = document.getElementById("div1");
+                var childPara1= document.getElementById("p1");
+                parent.removeChild(childPara1);
+               
+            }
+
+            function handleCreate(){
+                var parent = document.getElementById("div1");
+                var childPara = document.createElement("p")
+                var textToChildPara= document.createTextNode("I want to be a best person in my life");
+                
+                childPara.appendChild(textToChildPara);
+                parent.appendChild(childPara);
+               
+            }
+        </Script>
+    </head>
+   <body>
+        <div id="div1">
+            <p id="p1">This is Prakash Chandra Palai</p>
+            <p id="p2">I am from Odisha</p>
+        </div>
+        <input type="button" value="Remove" id="button1" onclick="handleRemove()"/>
+        <input type="button" value="Create" id="button2" onclick="handleCreate()"/>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+            <title>onmouseover/onmouseout Custom functions</title>
+        <Script>
+
+            function handleMouseOverEvent(x){
+                x.style.color =  "red";
+                x.style.backgroundColor = "yellow";
+                x.innerHTML = "MOUSEOVER";
+
+            }
+            function handleMouseOutEvent(y){
+                y.style.color =  "blue";
+                y.style.backgroundColor = "yellow";
+                y.innerHTML = "MOUSEOUT";
+            }
+            
+        </Script>
+    </head>
+   <body>
+    <p onmouseover="handleMouseOverEvent(this)" 
+                onmouseout="handleMouseOutEvent(this)">MouseOver/MouseOut</p>
+   </body>
+</html>

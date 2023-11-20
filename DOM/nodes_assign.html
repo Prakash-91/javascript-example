@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <title>DOM: Node removal and creation</title>
+        <Script>
+            function handleDelete(){
+                var parent = document.getElementById("div1");
+                var childPara1= document.getElementById("b1");
+                parent.removeChild(childPara1);
+               
+            }
+
+            function handleAdd(){
+                var parent = document.getElementById("div1");
+                var childPara = document.createElement("b")
+                var textToChildPara= document.createTextNode("TV : 600$");
+
+                 // Adding br tag 
+                 var br = document.createElement("br");
+                
+                childPara.appendChild(textToChildPara);
+                //Adding 
+                childPara.appendChild(br);
+
+                parent.appendChild(childPara);
+               
+               
+               
+            }
+        </Script>
+    </head>
+   <body>
+        <div id="div1">
+            <b id="b1">Laptop : 1000$</b> <br/>
+            <b id="b2">CellPhone : 500$</b> <br/>
+        </div>
+        <input type="button" value="Add" id="button2" onclick="handleAdd()"/>
+        <input type="button" value="delete" id="button1" onclick="handleDelete()"/>
+   </body>
+</html>

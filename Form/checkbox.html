@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <title>Form Number validation</title>
+        <Script>
+        
+        function validate(){
+
+            var valid = false;
+            if(document.getElementById("javascript").checked){
+                valid = true;
+            }
+            if(document.getElementById("reactjs").checked){
+                valid = true;
+            }
+            if(document.getElementById("angularjs").checked){
+                valid = true;
+            }
+            
+           if(valid){
+            alert("Validation is successful");
+           }else{
+            alert("Please select atleast one Course");
+            return false;
+           }
+        }
+            
+        </Script>
+    </head>
+   <body>
+    <H3>Select a Course</H3>
+    <form name="myForm" action="success.jsp" onsubmit="return validate()">
+        <input type="checkbox" id="javascript" value="Javascript"/>Javascript
+        <input type="checkbox" id="reactjs" value="React JS"/>React JS
+        <input type="checkbox" id="angularjs" value="Angular JS"/>Angular JS
+        <input type="submit" value="submit"/>
+    </form>
+    
+   </body>
+</html>

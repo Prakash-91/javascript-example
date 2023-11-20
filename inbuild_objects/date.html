@@ -1,0 +1,19 @@
+<html>
+    <head>
+            <title>date</title>
+        <Script>
+            function displayDate(){
+                var d = new Date();
+                //var x = d.toLocaleDateString();
+                //var x = d.toLocaleTimeString();
+                var x = d.toLocaleString();
+                document.getElementById("dateinfo").innerHTML=x;
+            }
+
+        </Script>
+    </head>
+   <body onload="displayDate()">
+    <b>Current Date:</b>
+    <p id="dateinfo"></p>
+   </body>
+</html>
