@@ -1,0 +1,31 @@
+<html>
+    <head>
+            <title>Form Number validation</title>
+        <Script>
+        
+        function validate(){
+            var name = document.myForm.uname.value;
+            var exp = /^[A-Za-z]+$/;
+            var result = exp.test(name);
+
+            if(result){
+                alert("Validation Successful");
+            }else{
+                alert("Validation Failed");
+                document.myForm.uname.focus();
+                return false;
+            }
+          
+        }
+            
+        </Script>
+    </head>
+   <body>
+    <H3>User Registration </H3>
+    <form name="myForm" action="success.jsp" onsubmit="return validate()">
+        User Name: <input type="text" name="uname"/>
+        <input type="submit" value="submit"/>
+    </form>
+    
+   </body>
+</html>

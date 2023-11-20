@@ -1,0 +1,36 @@
+<html>
+    <head>
+            <title>Form Number validation</title>
+        <Script>
+        
+        function validate(){
+
+            var color = document.myForm.color.value;
+
+            if(color==""){
+                alert("Please select atleast one color");
+                return false;
+            }
+            else{
+                alert("Validation is successful");
+                return true;
+            }
+           
+        }
+            
+        </Script>
+    </head>
+   <body>
+    <H3>Select a Color</H3>
+    <form name="myForm" action="success.jsp" onsubmit="return validate()">
+        <select name="color">
+            <option value="">Select a Color</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+          </select>
+        <input type="submit" value="submit"/>
+    </form>
+    
+   </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+            <title>Onclick Event Custom functions</title>
+        <Script>
+
+            function calculate(){
+                var num1 = parseInt(document.calform.num1.value);
+                var num2 = parseInt(document.calform.num2.value);
+                var res = document.calform.result;
+                res.value = num1+num2;
+            }            
+            
+        </Script>
+    </head>
+   <body>
+    <form name="calform">
+        Number1 : <input type="text" name="num1"/><br/>
+        Number2 : <input type="text" name="num2"/><br/>
+        Result : <input type="text" name="result"/><br/>
+         <input type="button" name="add" value="Add" onclick="calculate()"/>
+    </form>
+   </body>
+</html>

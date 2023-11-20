@@ -1,0 +1,32 @@
+<html>
+    <head>
+            <title>Error with try catch block</title>
+        <Script>
+
+            function validateAge(){
+                //console.log("Inside method");
+                try{
+                    var age = document.getElementById("age").value;
+                    if(age == ""){
+                        throw "Age can't be empty";
+                    }
+                    if(age <= 18){
+                        throw "Too young for vote";
+                    }
+                }catch(obj){
+                    document.getElementById("errorInfo").innerHTML=obj;
+                }
+                finally{
+                    document.getElementById("finallyInfo").innerHTML= "Entered value is :"+age;
+                }
+            }
+        </Script>
+    </head>
+   <body>
+    Age: <input type="text", id="age"/> <br/>
+         <input type="button", onclick="validateAge()", value="validate">
+         <p id="errorInfo"></p>
+         <p id="finallyInfo"></p>
+
+   </body>
+</html>

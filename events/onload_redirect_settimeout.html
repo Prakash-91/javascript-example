@@ -1,0 +1,19 @@
+<html>
+    <head>
+            <title>onload/redirect settimeout Event</title>
+        <Script>
+
+            function setTimeOutDelay(){
+                setTimeout(redirect, 2000)
+            }
+
+            function redirect(){
+                window.location="http://google.com";
+            }
+            
+        </Script>
+    </head>
+   <body onload="setTimeOutDelay()">
+    <p>Redirecting</p>
+   </body>
+</html>

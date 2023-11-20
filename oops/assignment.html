@@ -1,0 +1,36 @@
+<html>
+    <head>
+            <title>Javascript Oject Assignment</title>
+        <Script>
+
+            function Product(id,name,description,price){
+                this.id=id;
+                this.name=name;
+                this.description=description;
+                this.price=price;
+                this.displayProduct=displayProduct;
+                this.calculateDiscount=calculateDiscount;
+            }
+
+            function displayProduct(){
+                document.write(this.id+"<br/>"+this.name+"<br/>"+this.description+"<br/>"+this.price+"<br/>")
+            }
+            function calculateDiscount(discount){
+                //this.discount=discount;
+                totalValue = this.price * (100 - discount) / 100;
+                document.write("Total Price : "+totalValue+"<br/>")
+            }
+
+            var prod1 = new Product(1,"Sony", "Sony TV", 100000,10);
+            prod1.displayProduct();
+            prod1.calculateDiscount(10);
+            var prod2 = new Product(2,"LG", "LG Purifier", 20000,20);
+            prod2.displayProduct();
+            prod2.calculateDiscount(20);
+            
+        </Script>
+    </head>
+   <body>
+    
+   </body>
+</html>

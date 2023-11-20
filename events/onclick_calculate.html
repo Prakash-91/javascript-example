@@ -1,0 +1,38 @@
+<html>
+    <head>
+            <title>Onclick Event Custom functions</title>
+        <Script>
+
+            function calculate(x){
+                var num1 = parseInt(document.calform.num1.value);
+                var num2 = parseInt(document.calform.num2.value);
+                var res = document.calform.result;
+                //res.value = num1+num2;
+                if(x == "Add"){
+                    res.value = num1+num2;
+                }else if(x == "Sub"){
+                    res.value = num1-num2;
+                }else if(x == "Mul"){
+                    res.value = num1*num2
+                }else if(x == "Div"){
+                    res.value = num1/num2;
+                }else {
+                    res.value= num1%num2;
+                }
+            }            
+            
+        </Script>
+    </head>
+   <body>
+    <form name="calform">
+        Number1 : <input type="text" name="num1"/><br/>
+        Number2 : <input type="text" name="num2"/><br/>
+        Result : <input type="text" name="result"/><br/>
+         <input type="button" name="add" value="Add" onclick="calculate(this.value)"/>
+         <input type="button" name="add" value="Sub" onclick="calculate(this.value)"/>
+         <input type="button" name="add" value="Mul" onclick="calculate(this.value)"/>
+         <input type="button" name="add" value="Div" onclick="calculate(this.value)"/>
+         <input type="button" name="add" value="Mod" onclick="calculate(this.value)"/>
+    </form>
+   </body>
+</html>

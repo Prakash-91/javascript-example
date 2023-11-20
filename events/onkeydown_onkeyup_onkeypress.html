@@ -1,0 +1,26 @@
+<html>
+    <head>
+            <title>onfocus/onblur Event</title>
+        <Script>
+
+            function handleOnKeyDownEvent(x){
+                x.style.color="red"
+                x.style.backgroundColor ="blue";
+            }
+            function handleOnKeyUp(x){
+                x.style.color="green"
+                x.style.backgroundColor ="yellow";
+            }
+            function handleOnKeyPressEvent(x){
+                x.style.color="white"
+                x.style.backgroundColor ="black";
+            }
+            
+        </Script>
+    </head>
+   <body>
+    <input type="text" onkeydown="handleOnKeyDownEvent(this)" onkeyup="handleOnKeyUp(this)" 
+                    onkeypress="handleOnKeyPressEvent(this)"/>
+    </select>
+   </body>
+</html>

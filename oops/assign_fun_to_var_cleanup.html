@@ -1,0 +1,35 @@
+<html>
+    <head>
+            <title>Java Script Oject Creation and assigning function to a object variable</title>
+        <Script>
+
+            function blogPost(title,text){
+                this.title = title;
+                this.text = text;
+                this.category=addCtaegory;
+                this.displayBlogSpot=displayBlogSpot;
+            } 
+            function addCtaegory(category){
+                this.category=category;
+            }    
+            
+            function displayBlogSpot(){
+                document.write(this.title+"<br/>");
+                document.write(this.text+"<br/>");
+                document.write(this.category+"<br/>");
+            }
+            var bp1 = new blogPost("ReactJS", "It is a Single Page UI Technology");
+            bp1.category("Advanced UI Technology");
+            bp1.displayBlogSpot();
+
+            var bp2 = new blogPost("AngularJS", "It is also competator of ReactJS");
+            bp2.category("Advanced UI Technology same as like ReactJS");
+            bp2.displayBlogSpot();
+
+            
+        </Script>
+    </head>
+   <body>
+    
+   </body>
+</html>
