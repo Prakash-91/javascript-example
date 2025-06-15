@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <Script>
+          /*
+          let scores = new Map();
+          scores.set("maths",100);
+          scores.set("physics",90);
+          scores.set("chemistry",95);
+          */
+
+           // alter way to create a Map
+          let scores = new Map([["maths",100],["physics",90],["chemistry",95]]);
+
+          console.log(scores);
+          console.log(scores.size);
+          console.log(scores.get("maths"));
+          console.log(scores.get("physics"));
+          console.log(scores.get("chemistry"));
+
+          console.log(scores.has("Biology"));
+
+          console.log(scores.has("maths"));
+          scores.delete("maths");
+          console.log(scores.has("maths"));
+          scores.clear();
+          console.log(scores);
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>

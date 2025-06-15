@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <Script>
+        class BMW{
+          constructor(model,year){
+            this.model = model;
+            this.year = year;
+          }
+
+          start(){
+            console.log("Start Engine");
+          }
+           stop(){
+            console.log("Stop Engine");
+          }
+        }
+        class ThirdGeneration extends BMW{
+          constructor(model,year,cruiseControlEnable){
+            super(model,year);
+            this.cruiseControlEnable = cruiseControlEnable;
+          }
+        }
+        class FiveGeneration extends BMW{
+          constructor(model,year,parkingAssistanceenable){
+            super(model,year);
+            this.parkingAssistanceenable = parkingAssistanceenable;
+          }
+          start(){
+            console.log("Start and Run the Engine");
+          }
+        }
+
+        let thirdGeneration = new ThirdGeneration("3xe",2025,true);
+        console.log(thirdGeneration);
+        console.log(thirdGeneration.model);
+        console.log(thirdGeneration.year);
+        console.log(thirdGeneration.cruiseControlEnable);
+        thirdGeneration.start();
+        thirdGeneration.stop();
+
+        let fiveGeneration = new FiveGeneration("5xe",2026,true);
+        console.log(fiveGeneration);
+        console.log(fiveGeneration.model);
+        console.log(fiveGeneration.year);
+        console.log(fiveGeneration.parkingAssistanceenable);
+        fiveGeneration.start();
+        fiveGeneration.stop();
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>

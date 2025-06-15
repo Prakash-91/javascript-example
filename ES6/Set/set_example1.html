@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <Script>
+          /*
+          let courses = new Set();
+          courses.add("ReactJs");
+          courses.add("NodeJs");
+          courses.add("AngularJs");
+          courses.add("AngularJs");
+          */
+          // Aliter
+          //let courses = new Set().add("ReactJs").add("NodeJs").add("AngularJs");
+          
+          //Aliter
+          let courses = new Set(["ReactJs","NodeJs","AngularJs"]);
+
+
+          console.log(courses.size);
+          console.log(courses);
+          console.log(courses.has("ReactJs"));
+          courses.delete("ReactJs");
+          //courses.clear();
+          console.log(courses.has("ReactJs"));
+
+          for(let course of courses){
+            console.log(course);
+          }
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>

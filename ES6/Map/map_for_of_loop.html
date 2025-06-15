@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <Script>
+         
+          let scores = new Map([["maths",100],["physics",90],["chemistry",95]]);
+          let keys = scores.keys();
+          for(let key of keys){
+            console.log(scores.get(key));
+          }
+
+          let values = scores.values();
+          for(let value of values){
+            console.log(value);
+          }
+
+          /*
+          let entries = scores.entries();
+          for(let entry of entries){
+            console.log(entry[0]+", "+entry[1]);
+          }*/
+
+          // Alter way to get entries using Array destructuring
+          let entries = scores.entries();
+          for(let [key,value] of entries){
+            console.log(key,value);
+          }
+
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>

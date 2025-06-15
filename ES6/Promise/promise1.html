@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <Script>
+        
+        function myAsyncFunction(){
+          // Typically promise used for Aysnc calls ex: DBcall etc ...
+          let promise = new Promise((resolve,reject)=>{
+            let error = true;
+              setTimeout(()=>{
+                  console.log("Working Asynchronously");
+                  if(error){
+                    reject("Error");
+                  }else{
+                    resolve("success, work done");
+                  }
+              },2000);
+          });
+          return promise;
+        }
+
+        myAsyncFunction().then(
+          (success) => console.log(success)
+          //(error) => console.log(error)
+        ).catch((error) => console.log(error));
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>
