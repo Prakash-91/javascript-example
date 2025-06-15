@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <Script>
+
+            let student = {
+                firstName:"Prakash",
+                lastName:"Palai",
+                score:90
+            }
+            console.log(student.firstName+" , "+student.lastName+" , "+student.score);
+
+            /*
+            const {firstName:fName,lastName:lName,score:s} =student;
+            console.log(fName+", "+lName+", "+s);
+            */
+            // Alter , if wanted to keep same attribute name as part of oject destructuring
+            const{firstName,lastName,score} = student;
+            console.log(firstName+", "+lastName+", "+score);
+        </Script>
+    </head>
+   <body>
+   </body>
+</html>
